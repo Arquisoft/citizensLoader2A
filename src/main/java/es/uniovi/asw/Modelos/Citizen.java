@@ -29,6 +29,20 @@ public class Citizen {
 		this.nombreUsuario = nombreUsuario;
 		this.contraseña = contraseña;
 	}
+	
+	
+
+	public Citizen(String nombre, String apellidos, String email, Date fechaNacimiento, String direccionPostal,
+			String nacionalidad, String dni) {
+		super();
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.email = email;
+		this.fechaNacimiento = fechaNacimiento;
+		this.direccionPostal = direccionPostal;
+		this.nacionalidad = nacionalidad;
+		this.dni = dni;
+	}
 
 	public String getNombreUsuario() {
 		return nombreUsuario;
