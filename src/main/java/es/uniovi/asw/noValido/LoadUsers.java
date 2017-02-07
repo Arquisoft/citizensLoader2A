@@ -1,4 +1,4 @@
-package es.uniovi.asw;
+package es.uniovi.asw.noValido;
 
 import java.util.logging.Logger;
 
@@ -9,7 +9,7 @@ import java.util.logging.Logger;
  *
  */
 public class LoadUsers {
-
+	//Pedro: Usar mejor el UserLoader para que en el futuro sea mejor añadir nuevos tipos de Loaders
 	public static void main(String... args) {
 		final LoadUsers runner = new LoadUsers();
 		runner.run(args);

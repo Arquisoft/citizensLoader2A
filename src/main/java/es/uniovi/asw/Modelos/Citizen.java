@@ -4,20 +4,17 @@ import java.util.Date;
 
 public class Citizen {
 	
-	
 	private String nombre; 
 	private String apellidos;
 	private String email;
 	private Date fechaNacimiento;
-	private String direccionPostal; //Calle?nº de la calle?
+	private String direccionPostal;
 	private String nacionalidad;
 	private String dni;
-	
 	private String nombreUsuario;
 	private String contraseña;
 	
-	
-	
+	public Citizen(){}
 	
 	public Citizen(String nombre, String apellidos, String email, Date fechaNacimiento, String direccionPostal,
 			String nacionalidad, String dni, String nombreUsuario, String contraseña) {
@@ -33,12 +30,6 @@ public class Citizen {
 		this.contraseña = contraseña;
 	}
 
-
-
-/** Solo getters excepto en usuario y contraseña que también tendrán setters para poder modificarlos,
- *  lo demás solo se modifica en el constructor una vez
- * @return
- */
 	public String getNombreUsuario() {
 		return nombreUsuario;
 	}
@@ -83,7 +74,41 @@ public class Citizen {
 	public String getDni() {
 		return dni;
 	}
-	
-	
 
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public void setFechaNacimiento(Date fechaNacimiento) {
+		this.fechaNacimiento = fechaNacimiento;
+	}
+
+	public void setDireccionPostal(String direccionPostal) {
+		this.direccionPostal = direccionPostal;
+	}
+
+	public void setNacionalidad(String nacionalidad) {
+		this.nacionalidad = nacionalidad;
+	}
+
+	public void setDni(String dni) {
+		this.dni = dni;
+	}
+
+	@Override
+	public String toString() {
+		return "Citizen [nombre=" + nombre + ", apellidos=" + apellidos
+				+ ", email=" + email + ", fechaNacimiento=" + fechaNacimiento
+				+ ", direccionPostal=" + direccionPostal + ", nacionalidad="
+				+ nacionalidad + ", dni=" + dni + "]";
+	}	
+	
 }
