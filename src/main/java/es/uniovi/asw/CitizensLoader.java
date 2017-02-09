@@ -3,25 +3,41 @@ package es.uniovi.asw;
 import java.io.IOException;
 import java.util.List;
 
-import es.uniovi.asw.Modelos.Citizen;
+import es.uniovi.asw.modelos.Citizen;
 import es.uniovi.asw.parser.CitizensReader;
+import es.uniovi.asw.parser.ExcelCitizensReader;
+import es.uniovi.asw.parser.TextCitizensReader;
 
-public abstract class CitizensLoader {
+public class CitizensLoader {
+	
+	public static void main(String... args) throws IOException {
+		
+		//new CitizensLoader().load((String) args[0], (String) args[1]);
+		
+		// Por si hay problemas con la de arriba
+		new CitizensLoader().load("excel", "src/test/resources/test.xlsx"); 
+		//new CitizensLoader().load("texto", "src/test/resources/test.txt"); 
+	}
 
-	public void load(String filePath) throws IOException {
-		List<Citizen> citizens = getReader().readCitizens(filePath); 
+	public void load(String formato, String filePath) throws IOException {
+		List<Citizen> citizens = getReader(formato).readCitizens(filePath); 
 		printCitizens(citizens);
-		//Comprobaciones
+		//Comprobaciones (¿Alguno de los usuarios que he leido está ya en la base de datos?)
 		//Insertar en base de datos
 	}
 	
 	/**
-	 * Factory method, si queremos añadir más tipos de readers en el futuro no hay 
-	 * que cambiar ninguna clase ni recompilar. Principio de abierto cerrado:  abierto para
-	 * extensión, y cerrado para modificación.
-	 *
+	 * Crea y devuelve el reader adecuado
 	 */
-	abstract protected CitizensReader getReader();
+	private CitizensReader getReader(String formato) {
+		if (formato.equals("excel")) {
+			return new ExcelCitizensReader();
+		}
+		else if(formato.equals("texto")) {
+			return new TextCitizensReader();
+		}
+		return null;
+	}
 	
 	private void printCitizens(List<Citizen> citizens) {
 		for (Citizen citizen : citizens) {

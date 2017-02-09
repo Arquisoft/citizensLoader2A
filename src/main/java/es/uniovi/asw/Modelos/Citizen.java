@@ -1,4 +1,4 @@
-package es.uniovi.asw.Modelos;
+package es.uniovi.asw.modelos;
 
 import java.util.Date;
 
