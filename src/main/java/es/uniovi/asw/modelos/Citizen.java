@@ -4,138 +4,135 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-@Table(name="CITIZEN")
+@Table(name = "CITIZEN")
 public class Citizen {
-	
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long ID;
-	
-	@Column(name="NOMBRE")
-	private String nombre;
-	@Column(name="APELLIDOS")
-	private String apellidos;
-	private String email;
-	@Temporal(TemporalType.DATE)
-	@Column(name="FECHA_NACIMIENTO")
-	private Date fechaNacimiento;
-	
-	private String direccionPostal;
-	private String nacionalidad;
-	private String dni;
-	private String nombreUsuario;
-	private String contraseña;
-	
-	//Constructor vacio para JPA
-	public Citizen(){}
-	
-	public Citizen(String nombre, String apellidos, String email, Date fechaNacimiento, String direccionPostal,
-			String nacionalidad, String dni, String nombreUsuario, String contraseña) {
-		super();
-		this.nombre = nombre;
-		this.apellidos = apellidos;
-		this.email = email;
-		this.fechaNacimiento = fechaNacimiento;
-		this.direccionPostal = direccionPostal;
-		this.nacionalidad = nacionalidad;
-		this.dni = dni;
-		this.nombreUsuario = nombreUsuario;
-		this.contraseña = contraseña;
-	}
-	
-	
 
-	public Citizen(String nombre, String apellidos, String email, Date fechaNacimiento, String direccionPostal,
-			String nacionalidad, String dni) {
-		super();
-		this.nombre = nombre;
-		this.apellidos = apellidos;
-		this.email = email;
-		this.fechaNacimiento = fechaNacimiento;
-		this.direccionPostal = direccionPostal;
-		this.nacionalidad = nacionalidad;
-		this.dni = dni;
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long ID;
 
-	public String getNombreUsuario() {
-		return nombreUsuario;
-	}
+    @Column(name = "NOMBRE")
+    private String nombre;
+    @Column(name = "APELLIDOS")
+    private String apellidos;
+    private String email;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "FECHA_NACIMIENTO")
+    private Date fechaNacimiento;
 
-	public void setNombreUsuario(String nombreUsuario) {
-		this.nombreUsuario = nombreUsuario;
-	}
+    private String direccionPostal;
+    private String nacionalidad;
+    private String dni;
+    private String nombreUsuario;
+    private String contrasena;
 
-	public String getContraseña() {
-		return contraseña;
-	}
+    // Constructor vacio para JPA
+    public Citizen() {
+    }
 
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
-	}
+    public Citizen(String nombre, String apellidos, String email, Date fechaNacimiento, String direccionPostal,
+	    String nacionalidad, String dni, String nombreUsuario, String contrasena) {
+	super();
+	this.nombre = nombre;
+	this.apellidos = apellidos;
+	this.email = email;
+	this.fechaNacimiento = fechaNacimiento;
+	this.direccionPostal = direccionPostal;
+	this.nacionalidad = nacionalidad;
+	this.dni = dni;
+	this.nombreUsuario = nombreUsuario;
+	this.contrasena = contrasena;
+    }
 
+    public Citizen(String nombre, String apellidos, String email, Date fechaNacimiento, String direccionPostal,
+	    String nacionalidad, String dni) {
+	super();
+	this.nombre = nombre;
+	this.apellidos = apellidos;
+	this.email = email;
+	this.fechaNacimiento = fechaNacimiento;
+	this.direccionPostal = direccionPostal;
+	this.nacionalidad = nacionalidad;
+	this.dni = dni;
+    }
 
-	public String getNombre() {
-		return nombre;
-	}
+    public String getNombreUsuario() {
+	return nombreUsuario;
+    }
 
-	public String getApellidos() {
-		return apellidos;
-	}
+    public void setNombreUsuario(String nombreUsuario) {
+	this.nombreUsuario = nombreUsuario;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public String getContrasena() {
+	return contrasena;
+    }
 
-	public Date getFechaNacimiento() {
-		return fechaNacimiento;
-	}
+    public void setContrasena(String contrasena) {
+	this.contrasena = contrasena;
+    }
 
-	public String getDireccionPostal() {
-		return direccionPostal;
-	}
+    public String getNombre() {
+	return nombre;
+    }
 
-	public String getNacionalidad() {
-		return nacionalidad;
-	}
+    public String getApellidos() {
+	return apellidos;
+    }
 
-	public String getDni() {
-		return dni;
-	}
+    public String getEmail() {
+	return email;
+    }
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+    public Date getFechaNacimiento() {
+	return fechaNacimiento;
+    }
 
-	public void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
-	}
+    public String getDireccionPostal() {
+	return direccionPostal;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public String getNacionalidad() {
+	return nacionalidad;
+    }
 
-	public void setFechaNacimiento(Date fechaNacimiento) {
-		this.fechaNacimiento = fechaNacimiento;
-	}
+    public String getDni() {
+	return dni;
+    }
 
-	public void setDireccionPostal(String direccionPostal) {
-		this.direccionPostal = direccionPostal;
-	}
+    public void setNombre(String nombre) {
+	this.nombre = nombre;
+    }
 
-	public void setNacionalidad(String nacionalidad) {
-		this.nacionalidad = nacionalidad;
-	}
+    public void setApellidos(String apellidos) {
+	this.apellidos = apellidos;
+    }
 
-	public void setDni(String dni) {
-		this.dni = dni;
-	}
+    public void setEmail(String email) {
+	this.email = email;
+    }
 
-	@Override
-	public String toString() {
-		return "Citizen [nombre=" + nombre + ", apellidos=" + apellidos
-				+ ", email=" + email + ", fechaNacimiento=" + fechaNacimiento
-				+ ", direccionPostal=" + direccionPostal + ", nacionalidad="
-				+ nacionalidad + ", dni=" + dni + "]";
-	}	
-	
+    public void setFechaNacimiento(Date fechaNacimiento) {
+	this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public void setDireccionPostal(String direccionPostal) {
+	this.direccionPostal = direccionPostal;
+    }
+
+    public void setNacionalidad(String nacionalidad) {
+	this.nacionalidad = nacionalidad;
+    }
+
+    public void setDni(String dni) {
+	this.dni = dni;
+    }
+
+    @Override
+    public String toString() {
+	return "Citizen [nombre=" + nombre + ", apellidos=" + apellidos + ", email=" + email + ", fechaNacimiento="
+		+ fechaNacimiento + ", direccionPostal=" + direccionPostal + ", nacionalidad=" + nacionalidad + ", dni="
+		+ dni + "]";
+    }
+
 }

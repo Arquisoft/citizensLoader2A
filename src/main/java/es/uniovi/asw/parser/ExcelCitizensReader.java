@@ -15,59 +15,58 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import es.uniovi.asw.modelos.Citizen;
 
-
 public class ExcelCitizensReader implements CitizensReader {
 
-	@Override
-	public List<Citizen> readCitizens(String filePath) throws IOException {
-		List<Citizen> citizens = new ArrayList<Citizen>();
-		File file = new File(filePath);
-	    FileInputStream inputStream = new FileInputStream(file);
-	 
-	    Workbook workbook = new XSSFWorkbook(inputStream);
-	    Sheet sheet = workbook.getSheetAt(0);
-	    Iterator<Row> iterator = sheet.iterator();
-	    iterator.next(); // Para saltar la primera fila de titulos
-	    
-	    while (iterator.hasNext()) {
-	        Row nextRow = iterator.next();
-	        Iterator<Cell> cellIterator = nextRow.cellIterator();
-	        Citizen citizen = new Citizen();
-	 
-	        while (cellIterator.hasNext()) {
-	            Cell nextCell = cellIterator.next();
-	            int columnIndex = nextCell.getColumnIndex();
-	 
-	            switch (columnIndex) {
-	            case 0:
-	                citizen.setNombre(nextCell.getStringCellValue());
-	                break;
-	            case 1:
-	                citizen.setApellidos(nextCell.getStringCellValue());
-	                break;
-	            case 2:
-	                citizen.setEmail(nextCell.getStringCellValue());
-	                break;
-	            case 3:
-	                citizen.setFechaNacimiento(nextCell.getDateCellValue());
-	                break;
-		        case 4:
-	                citizen.setDireccionPostal(nextCell.getStringCellValue());
-	                break;
-		        case 5:
-	                citizen.setNacionalidad(nextCell.getStringCellValue());
-	                break; 
-		        case 6:
-	                citizen.setDni(nextCell.getStringCellValue());
-	                break;
-	            }
-	        }
-	        citizens.add(citizen);
+    @Override
+    public List<Citizen> readCitizens(String filePath) throws IOException {
+	List<Citizen> citizens = new ArrayList<Citizen>();
+	File file = new File(filePath);
+	FileInputStream inputStream = new FileInputStream(file);
+
+	Workbook workbook = new XSSFWorkbook(inputStream);
+	Sheet sheet = workbook.getSheetAt(0);
+	Iterator<Row> iterator = sheet.iterator();
+	iterator.next(); // Para saltar la primera fila de titulos
+
+	while (iterator.hasNext()) {
+	    Row nextRow = iterator.next();
+	    Iterator<Cell> cellIterator = nextRow.cellIterator();
+	    Citizen citizen = new Citizen();
+
+	    while (cellIterator.hasNext()) {
+		Cell nextCell = cellIterator.next();
+		int columnIndex = nextCell.getColumnIndex();
+
+		switch (columnIndex) {
+		case 0:
+		    citizen.setNombre(nextCell.getStringCellValue());
+		    break;
+		case 1:
+		    citizen.setApellidos(nextCell.getStringCellValue());
+		    break;
+		case 2:
+		    citizen.setEmail(nextCell.getStringCellValue());
+		    break;
+		case 3:
+		    citizen.setFechaNacimiento(nextCell.getDateCellValue());
+		    break;
+		case 4:
+		    citizen.setDireccionPostal(nextCell.getStringCellValue());
+		    break;
+		case 5:
+		    citizen.setNacionalidad(nextCell.getStringCellValue());
+		    break;
+		case 6:
+		    citizen.setDni(nextCell.getStringCellValue());
+		    break;
+		}
 	    }
-	    workbook.close();
-	    inputStream.close();
-	 
-	    return citizens;
+	    citizens.add(citizen);
 	}
-	
+	workbook.close();
+	inputStream.close();
+
+	return citizens;
+    }
+
 }
