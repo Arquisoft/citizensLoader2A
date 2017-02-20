@@ -1,19 +1,32 @@
 package es.uniovi.asw.modelos;
 
 import java.util.Date;
+import javax.persistence.*;
 
+@Entity
+@Table(name="CITIZEN")
 public class Citizen {
 	
-	private String nombre; 
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long ID;
+	
+	@Column(name="NOMBRE")
+	private String nombre;
+	@Column(name="APELLIDOS")
 	private String apellidos;
 	private String email;
+	@Temporal(TemporalType.DATE)
+	@Column(name="FECHA_NACIMIENTO")
 	private Date fechaNacimiento;
+	
 	private String direccionPostal;
 	private String nacionalidad;
 	private String dni;
 	private String nombreUsuario;
 	private String contraseña;
 	
+	//Constructor vacio para JPA
 	public Citizen(){}
 	
 	public Citizen(String nombre, String apellidos, String email, Date fechaNacimiento, String direccionPostal,
