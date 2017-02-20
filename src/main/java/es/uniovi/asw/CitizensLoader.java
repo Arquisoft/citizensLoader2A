@@ -14,8 +14,10 @@ import es.uniovi.asw.persistence.Jpa;
 
 public class CitizensLoader {
 
+    List<Citizen> citizens;
+    
+    /** No tratamos las excepciones, deberíamos hacer un log con los errores **/
     public static void main(String... args) throws IOException {
-
 	// new CitizensLoader().load((String) args[0], (String) args[1]);
 
 	// Por si hay problemas con la de arriba
@@ -24,13 +26,17 @@ public class CitizensLoader {
     }
 
     public void load(String formato, String filePath) throws IOException {
-	List<Citizen> citizens = getReader(formato).readCitizens(filePath);
+	citizens = getReader(formato).readCitizens(filePath);
 	printCitizens(citizens);
 	// Comprobaciones (¿Alguno de los usuarios que he leido está ya en la
 	// base de datos?)
 	// Insertar en base de datos
     }
 
+    protected List<Citizen> getCitizens() {
+	return citizens;
+    }
+    
     /**
      * Crea y devuelve el reader adecuado
      */
