@@ -55,7 +55,7 @@ public class CitizensLoader {
 	}
     }
 
-    private void LoadDB(List<Citizen> citizens) {
+    private void loadDB(List<Citizen> citizens) {
 	EntityManager EM = Jpa.getEntityManager();
 	EntityTransaction ET = EM.getTransaction();
 	ET.begin();
