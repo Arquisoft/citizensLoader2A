@@ -14,7 +14,7 @@ import es.uniovi.asw.persistence.Jpa;
 
 public class CitizensLoader {
 
-    List<Citizen> citizens;
+    private List<Citizen> citizens;
 
     /** No tratamos las excepciones, deberíamos hacer un log con los errores **/
     public static void main(String... args) throws IOException {

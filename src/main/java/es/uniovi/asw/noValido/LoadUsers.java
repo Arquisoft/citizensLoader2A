@@ -1,7 +1,5 @@
 package es.uniovi.asw.novalido;
 
-import java.util.logging.Logger;
-
 /**
  * Main application
  * 
