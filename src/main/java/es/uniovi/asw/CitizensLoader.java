@@ -15,7 +15,7 @@ import es.uniovi.asw.persistence.Jpa;
 public class CitizensLoader {
 
     List<Citizen> citizens;
-    
+
     /** No tratamos las excepciones, deberíamos hacer un log con los errores **/
     public static void main(String... args) throws IOException {
 	// new CitizensLoader().load((String) args[0], (String) args[1]);
@@ -36,14 +36,14 @@ public class CitizensLoader {
     protected List<Citizen> getCitizens() {
 	return citizens;
     }
-    
+
     /**
      * Crea y devuelve el reader adecuado
      */
     private CitizensReader getReader(String formato) {
-	if (formato.equals("excel")) {
+	if ("excel".equals(formato)) {
 	    return new ExcelCitizensReader();
-	} else if (formato.equals("texto")) {
+	} else if ("texto".equals(formato)) {
 	    return new TextCitizensReader();
 	}
 	return null;

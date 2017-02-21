@@ -59,6 +59,8 @@ public class ExcelCitizensReader implements CitizensReader {
 		case 6:
 		    citizen.setDni(nextCell.getStringCellValue());
 		    break;
+		default:
+		    break;
 		}
 	    }
 	    citizens.add(citizen);

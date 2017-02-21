@@ -17,7 +17,7 @@ public class LoadUsers {
     }
 
     // TODO
-    void run(String... args) {
+    protected void run(String... args) {
 	System.out.println("TODO");
     }
 }

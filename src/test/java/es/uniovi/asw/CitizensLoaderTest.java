@@ -11,8 +11,8 @@ import org.junit.Test;
 import es.uniovi.asw.modelos.Citizen;
 
 public class CitizensLoaderTest {
-    CitizensLoader excel;
-    CitizensLoader txt;
+    private CitizensLoader excel;
+    private CitizensLoader txt;
 
     @Before
     public void cargaExcel() throws IOException {
