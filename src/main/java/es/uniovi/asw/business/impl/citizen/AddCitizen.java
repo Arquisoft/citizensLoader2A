@@ -1,0 +1,23 @@
+package es.uniovi.asw.business.impl.citizen;
+
+import es.uniovi.asw.business.impl.*;
+import es.uniovi.asw.modelos.*;
+import es.uniovi.asw.persistence.*;
+
+
+public class AddCitizen implements Command {
+
+	private Citizen citizen;
+
+	public AddCitizen(Citizen citizen) {
+		this.citizen = citizen;
+	}
+
+	public Object execute() {
+		
+		Jpa.getManager().persist(citizen);
+		
+		return citizen;
+	}
+
+}
