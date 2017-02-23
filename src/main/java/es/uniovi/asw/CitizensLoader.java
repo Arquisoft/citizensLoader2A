@@ -58,6 +58,7 @@ public class CitizensLoader {
 		}
 	}
 
+	@SuppressWarnings("unused")
 	private void loadDB(List<Citizen> citizens) {
 		EntityManager EM = Jpa.getManager();
 		EntityTransaction ET = EM.getTransaction();
