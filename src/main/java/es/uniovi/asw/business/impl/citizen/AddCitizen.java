@@ -1,7 +1,7 @@
 package es.uniovi.asw.business.impl.citizen;
 
 import es.uniovi.asw.business.impl.*;
-import es.uniovi.asw.modelos.*;
+import es.uniovi.asw.model.*;
 import es.uniovi.asw.persistence.util.Jpa;
 
 public class AddCitizen implements Command {

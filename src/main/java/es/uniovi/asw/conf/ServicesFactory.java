@@ -5,7 +5,7 @@ import es.uniovi.asw.business.impl.CitizenServiceImpl;
 
 public class ServicesFactory {
 
-	public static CitizenService getAdminService() {
+	public static CitizenService getCitizenService() {
 		return new CitizenServiceImpl();
 	}
 }

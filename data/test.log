@@ -1,0 +1,357 @@
+/*C4*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C5*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C6*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C7*/SET SCHEMA PUBLIC
+INSERT INTO TCITIZENS VALUES(1,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500084Y','pablo@example.com','Pablo123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(2,'Luis','Mateo Blanco','luis@example.com','1970-03-02','Calle Real Oviedo 1','Italiana','95160962G','luis@example.com','Luis123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(3,'Ana','Blanco Acosta','ana@example.com','1987-11-16','Calle Principal 3','Italiana','90432976L','ana@example.com','Ana123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(4,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(5,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(6,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
+COMMIT
+DISCONNECT
+/*C3*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C8*/SET SCHEMA PUBLIC
+DELETE FROM TCITIZENS WHERE ID=1
+DELETE FROM TCITIZENS WHERE ID=2
+DELETE FROM TCITIZENS WHERE ID=3
+DELETE FROM TCITIZENS WHERE ID=4
+DELETE FROM TCITIZENS WHERE ID=5
+DELETE FROM TCITIZENS WHERE ID=6
+COMMIT
+/*C9*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C10*/SET SCHEMA PUBLIC
+INSERT INTO TCITIZENS VALUES(7,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500094Y','pablo@example.com','Pablo123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(8,'Luis','Mateo Blanco','luis@example.com','1970-03-02','Calle Real Oviedo 1','Italiana','95160962G','luis@example.com','Luis123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(9,'Ana','Blanco Acosta','ana@example.com','1987-11-16','Calle Principal 3','Italiana','90432976L','ana@example.com','Ana123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(10,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(11,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(12,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
+COMMIT
+DISCONNECT
+/*C8*/DELETE FROM TCITIZENS WHERE ID=7
+DELETE FROM TCITIZENS WHERE ID=8
+DELETE FROM TCITIZENS WHERE ID=9
+DELETE FROM TCITIZENS WHERE ID=10
+DELETE FROM TCITIZENS WHERE ID=11
+DELETE FROM TCITIZENS WHERE ID=12
+COMMIT
+/*C11*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C12*/SET SCHEMA PUBLIC
+INSERT INTO TCITIZENS VALUES(13,'Juan','Torres Pardo','juan@example.com','1985-10-10','C/ Federico Garc\u00eda Lorca 2','Espa\u00f1ol','90500084Y','juan@example.com','Juan123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(14,'Luis','L\u00f3pez Fernando','luis@example.com','1970-03-02','C/ Real Oviedo 2','Espa\u00f1ol','19160962F','luis@example.com','Luis123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(15,'Ana','Torres Pardo','ana@example.com','1960-01-01','Av. De la Constituci\u00f3n 8','Espa\u00f1ol','09940449X','ana@example.com','Ana123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(16,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500094Y','pablo@example.com','Pablo123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(17,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(18,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(19,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
+COMMIT
+DISCONNECT
+/*C8*/DELETE FROM TCITIZENS WHERE ID=13
+DELETE FROM TCITIZENS WHERE ID=14
+DELETE FROM TCITIZENS WHERE ID=15
+DELETE FROM TCITIZENS WHERE ID=16
+DELETE FROM TCITIZENS WHERE ID=17
+DELETE FROM TCITIZENS WHERE ID=18
+DELETE FROM TCITIZENS WHERE ID=19
+COMMIT
+/*C13*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C14*/SET SCHEMA PUBLIC
+INSERT INTO TCITIZENS VALUES(20,'Juan','Torres Pardo','juan@example.com','1985-10-10','C/ Federico Garc\u00eda Lorca 2','Espa\u00f1ol','90500084Y','juan@example.com','Juan123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(21,'Luis','L\u00f3pez Fernando','luis@example.com','1970-03-02','C/ Real Oviedo 2','Espa\u00f1ol','19160962F','luis@example.com','Luis123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(22,'Ana','Torres Pardo','ana@example.com','1960-01-01','Av. De la Constituci\u00f3n 8','Espa\u00f1ol','09940449X','ana@example.com','Ana123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(23,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500094Y','pablo@example.com','Pablo123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(24,'Jorge','Mateo Blanco','jorge@example.com','1970-03-02','Calle Real Oviedo 1','Italiana','95160962G','jorge@example.com','Jorge123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(25,'Violeta','Blanco Acosta','violeta@example.com','1987-11-16','Calle Principal 3','Italiana','90432976L','violeta@example.com','Violeta123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(26,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(27,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(28,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
+COMMIT
+DISCONNECT
+/*C8*/DELETE FROM TCITIZENS WHERE ID=20
+DELETE FROM TCITIZENS WHERE ID=21
+DELETE FROM TCITIZENS WHERE ID=22
+DELETE FROM TCITIZENS WHERE ID=23
+DELETE FROM TCITIZENS WHERE ID=24
+DELETE FROM TCITIZENS WHERE ID=25
+DELETE FROM TCITIZENS WHERE ID=26
+DELETE FROM TCITIZENS WHERE ID=27
+DELETE FROM TCITIZENS WHERE ID=28
+COMMIT
+/*C15*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C16*/SET SCHEMA PUBLIC
+INSERT INTO TCITIZENS VALUES(29,'Juan','Torres Pardo','juan@example.com','1985-10-10','C/ Federico Garc\u00eda Lorca 2','Espa\u00f1ol','90500084Y','juan@example.com','Juan123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(30,'Luis','L\u00f3pez Fernando','luis@example.com','1970-03-02','C/ Real Oviedo 2','Espa\u00f1ol','19160962F','luis@example.com','Luis123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(31,'Ana','Torres Pardo','ana@example.com','1960-01-01','Av. De la Constituci\u00f3n 8','Espa\u00f1ol','09940449X','ana@example.com','Ana123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(32,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500094Y','pablo@example.com','Pablo123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(33,'Jorge','Mateo Blanco','jorge@example.com','1970-03-02','Calle Real Oviedo 1','Italiana','95160962G','jorge@example.com','Jorge123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(34,'Violeta','Blanco Acosta','violeta@example.com','1987-11-16','Calle Principal 3','Italiana','90432976L','violeta@example.com','Violeta123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(35,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(36,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(37,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
+COMMIT
+DISCONNECT
+/*C17*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C18*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C19*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C20*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C8*/DELETE FROM TCITIZENS WHERE ID=29
+DELETE FROM TCITIZENS WHERE ID=30
+DELETE FROM TCITIZENS WHERE ID=31
+DELETE FROM TCITIZENS WHERE ID=32
+DELETE FROM TCITIZENS WHERE ID=33
+DELETE FROM TCITIZENS WHERE ID=34
+DELETE FROM TCITIZENS WHERE ID=35
+DELETE FROM TCITIZENS WHERE ID=36
+DELETE FROM TCITIZENS WHERE ID=37
+COMMIT
+/*C21*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C22*/SET SCHEMA PUBLIC
+INSERT INTO TCITIZENS VALUES(38,'Juan','Torres Pardo','juan@example.com','1985-10-10','C/ Federico Garc\u00eda Lorca 2','Espa\u00f1ol','90500084Y','juan@example.com','Juan123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(39,'Luis','L\u00f3pez Fernando','luis@example.com','1970-03-02','C/ Real Oviedo 2','Espa\u00f1ol','19160962F','luis@example.com','Luis123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(40,'Ana','Torres Pardo','ana@example.com','1960-01-01','Av. De la Constituci\u00f3n 8','Espa\u00f1ol','09940449X','ana@example.com','Ana123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(41,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500094Y','pablo@example.com','Pablo123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(42,'Jorge','Mateo Blanco','jorge@example.com','1970-03-02','Calle Real Oviedo 1','Italiana','95160962G','jorge@example.com','Jorge123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(43,'Violeta','Blanco Acosta','violeta@example.com','1987-11-16','Calle Principal 3','Italiana','90432976L','violeta@example.com','Violeta123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(44,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(45,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(46,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
+COMMIT
+DISCONNECT
+/*C8*/DELETE FROM TCITIZENS WHERE ID=38
+DELETE FROM TCITIZENS WHERE ID=39
+DELETE FROM TCITIZENS WHERE ID=40
+DELETE FROM TCITIZENS WHERE ID=41
+DELETE FROM TCITIZENS WHERE ID=42
+DELETE FROM TCITIZENS WHERE ID=43
+DELETE FROM TCITIZENS WHERE ID=44
+DELETE FROM TCITIZENS WHERE ID=45
+DELETE FROM TCITIZENS WHERE ID=46
+COMMIT
+/*C23*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C24*/SET SCHEMA PUBLIC
+INSERT INTO TCITIZENS VALUES(47,'Juan','Torres Pardo','juan@example.com','1985-10-10','C/ Federico Garc\u00eda Lorca 2','Espa\u00f1ol','90500084Y','juan@example.com','Juan123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(48,'Luis','L\u00f3pez Fernando','luis@example.com','1970-03-02','C/ Real Oviedo 2','Espa\u00f1ol','19160962F','luis@example.com','Luis123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(49,'Ana','Torres Pardo','ana@example.com','1960-01-01','Av. De la Constituci\u00f3n 8','Espa\u00f1ol','09940449X','ana@example.com','Ana123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(50,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500094Y','pablo@example.com','Pablo123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(51,'Jorge','Mateo Blanco','jorge@example.com','1970-03-02','Calle Real Oviedo 1','Italiana','95160962G','jorge@example.com','Jorge123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(52,'Violeta','Blanco Acosta','violeta@example.com','1987-11-16','Calle Principal 3','Italiana','90432976L','violeta@example.com','Violeta123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(53,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(54,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(55,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
+COMMIT
+DISCONNECT
+/*C8*/DELETE FROM TCITIZENS WHERE ID=47
+DELETE FROM TCITIZENS WHERE ID=48
+DELETE FROM TCITIZENS WHERE ID=49
+DELETE FROM TCITIZENS WHERE ID=50
+DELETE FROM TCITIZENS WHERE ID=51
+DELETE FROM TCITIZENS WHERE ID=52
+DELETE FROM TCITIZENS WHERE ID=53
+DELETE FROM TCITIZENS WHERE ID=54
+DELETE FROM TCITIZENS WHERE ID=55
+COMMIT
+/*C25*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C26*/SET SCHEMA PUBLIC
+INSERT INTO TCITIZENS VALUES(56,'Juan','Torres Pardo','juan@example.com','1985-10-10','C/ Federico Garc\u00eda Lorca 2','Espa\u00f1ol','90500084Y','juan@example.com','Juan123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(57,'Luis','L\u00f3pez Fernando','luis@example.com','1970-03-02','C/ Real Oviedo 2','Espa\u00f1ol','19160962F','luis@example.com','Luis123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(58,'Ana','Torres Pardo','ana@example.com','1960-01-01','Av. De la Constituci\u00f3n 8','Espa\u00f1ol','09940449X','ana@example.com','Ana123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(59,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500094Y','pablo@example.com','Pablo123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(60,'Jorge','Mateo Blanco','jorge@example.com','1970-03-02','Calle Real Oviedo 1','Italiana','95160962G','jorge@example.com','Jorge123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(61,'Violeta','Blanco Acosta','violeta@example.com','1987-11-16','Calle Principal 3','Italiana','90432976L','violeta@example.com','Violeta123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(62,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(63,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(64,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
+COMMIT
+DISCONNECT
+/*C27*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C28*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C8*/DELETE FROM TCITIZENS WHERE ID=56
+DELETE FROM TCITIZENS WHERE ID=57
+DELETE FROM TCITIZENS WHERE ID=58
+DELETE FROM TCITIZENS WHERE ID=59
+DELETE FROM TCITIZENS WHERE ID=60
+DELETE FROM TCITIZENS WHERE ID=61
+DELETE FROM TCITIZENS WHERE ID=62
+DELETE FROM TCITIZENS WHERE ID=63
+DELETE FROM TCITIZENS WHERE ID=64
+COMMIT
+/*C29*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C30*/SET SCHEMA PUBLIC
+INSERT INTO TCITIZENS VALUES(65,'Juan','Torres Pardo','juan@example.com','1985-10-10','C/ Federico Garc\u00eda Lorca 2','Espa\u00f1ol','90500084Y','juan@example.com','Juan123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(66,'Luis','L\u00f3pez Fernando','luis@example.com','1970-03-02','C/ Real Oviedo 2','Espa\u00f1ol','19160962F','luis@example.com','Luis123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(67,'Ana','Torres Pardo','ana@example.com','1960-01-01','Av. De la Constituci\u00f3n 8','Espa\u00f1ol','09940449X','ana@example.com','Ana123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(68,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500094Y','pablo@example.com','Pablo123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(69,'Jorge','Mateo Blanco','jorge@example.com','1970-03-02','Calle Real Oviedo 1','Italiana','95160962G','jorge@example.com','Jorge123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(70,'Violeta','Blanco Acosta','violeta@example.com','1987-11-16','Calle Principal 3','Italiana','90432976L','violeta@example.com','Violeta123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(71,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(72,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(73,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
+COMMIT
+DISCONNECT
+/*C31*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C32*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C33*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C34*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C8*/DELETE FROM TCITIZENS WHERE ID=65
+DELETE FROM TCITIZENS WHERE ID=66
+DELETE FROM TCITIZENS WHERE ID=67
+DELETE FROM TCITIZENS WHERE ID=68
+DELETE FROM TCITIZENS WHERE ID=69
+DELETE FROM TCITIZENS WHERE ID=70
+DELETE FROM TCITIZENS WHERE ID=71
+DELETE FROM TCITIZENS WHERE ID=72
+DELETE FROM TCITIZENS WHERE ID=73
+COMMIT
+/*C35*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C36*/SET SCHEMA PUBLIC
+INSERT INTO TCITIZENS VALUES(74,'Juan','Torres Pardo','juan@example.com','1985-10-10','C/ Federico Garc\u00eda Lorca 2','Espa\u00f1ol','90500084Y','juan@example.com','Juan123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(75,'Luis','L\u00f3pez Fernando','luis@example.com','1970-03-02','C/ Real Oviedo 2','Espa\u00f1ol','19160962F','luis@example.com','Luis123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(76,'Ana','Torres Pardo','ana@example.com','1960-01-01','Av. De la Constituci\u00f3n 8','Espa\u00f1ol','09940449X','ana@example.com','Ana123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(77,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500094Y','pablo@example.com','Pablo123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(78,'Jorge','Mateo Blanco','jorge@example.com','1970-03-02','Calle Real Oviedo 1','Italiana','95160962G','jorge@example.com','Jorge123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(79,'Violeta','Blanco Acosta','violeta@example.com','1987-11-16','Calle Principal 3','Italiana','90432976L','violeta@example.com','Violeta123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(80,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(81,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(82,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
+COMMIT
+DISCONNECT
+/*C37*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C38*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C39*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C40*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C41*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C42*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C8*/DELETE FROM TCITIZENS WHERE ID=74
+DELETE FROM TCITIZENS WHERE ID=75
+DELETE FROM TCITIZENS WHERE ID=76
+DELETE FROM TCITIZENS WHERE ID=77
+DELETE FROM TCITIZENS WHERE ID=78
+DELETE FROM TCITIZENS WHERE ID=79
+DELETE FROM TCITIZENS WHERE ID=80
+DELETE FROM TCITIZENS WHERE ID=81
+DELETE FROM TCITIZENS WHERE ID=82
+COMMIT
+/*C43*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C44*/SET SCHEMA PUBLIC
+INSERT INTO TCITIZENS VALUES(83,'Juan','Torres Pardo','juan@example.com','1985-10-10','C/ Federico Garc\u00eda Lorca 2','Espa\u00f1ol','90500084Y','juan@example.com','Juan123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(84,'Luis','L\u00f3pez Fernando','luis@example.com','1970-03-02','C/ Real Oviedo 2','Espa\u00f1ol','19160962F','luis@example.com','Luis123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(85,'Ana','Torres Pardo','ana@example.com','1960-01-01','Av. De la Constituci\u00f3n 8','Espa\u00f1ol','09940449X','ana@example.com','Ana123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(86,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500094Y','pablo@example.com','Pablo123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(87,'Jorge','Mateo Blanco','jorge@example.com','1970-03-02','Calle Real Oviedo 1','Italiana','95160962G','jorge@example.com','Jorge123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(88,'Violeta','Blanco Acosta','violeta@example.com','1987-11-16','Calle Principal 3','Italiana','90432976L','violeta@example.com','Violeta123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(89,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(90,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
+COMMIT
+INSERT INTO TCITIZENS VALUES(91,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
+COMMIT
+DISCONNECT

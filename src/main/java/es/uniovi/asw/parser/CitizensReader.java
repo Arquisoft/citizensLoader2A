@@ -3,10 +3,10 @@ package es.uniovi.asw.parser;
 import java.io.IOException;
 import java.util.List;
 
-import es.uniovi.asw.modelos.Citizen;
+import es.uniovi.asw.model.Citizen;
 
 public interface CitizensReader {
 
-    List<Citizen> readCitizens(String filePath) throws IOException;
+	List<Citizen> readCitizens(String filePath) throws IOException;
 
 }
