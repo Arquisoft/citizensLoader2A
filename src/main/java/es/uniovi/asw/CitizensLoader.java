@@ -10,7 +10,7 @@ import es.uniovi.asw.modelos.Citizen;
 import es.uniovi.asw.parser.CitizensReader;
 import es.uniovi.asw.parser.ExcelCitizensReader;
 import es.uniovi.asw.parser.TextCitizensReader;
-import es.uniovi.asw.persistence.Jpa;
+import es.uniovi.asw.persistence.util.Jpa;
 
 public class CitizensLoader {
 
@@ -59,7 +59,7 @@ public class CitizensLoader {
 	}
 
 	private void loadDB(List<Citizen> citizens) {
-		EntityManager EM = Jpa.getEntityManager();
+		EntityManager EM = Jpa.getManager();
 		EntityTransaction ET = EM.getTransaction();
 		ET.begin();
 		for (Citizen c : citizens) {
@@ -71,7 +71,7 @@ public class CitizensLoader {
 	/** Comprobar para cada ciudadano si ya esta en la BD **/
 	public boolean isCitizenEqualTo(Citizen c) {
 		Long numero = (Long) Jpa
-				.getEntityManager()
+				.getManager()
 				.createQuery(
 						"SELECT COUNT(c)" + " FROM CITIZEN C"
 								+ " WHERE C.DNI = ?1")

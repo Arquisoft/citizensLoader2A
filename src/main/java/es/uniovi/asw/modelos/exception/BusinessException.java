@@ -1,4 +1,4 @@
-package uo.ri.model.exception;
+package es.uniovi.asw.modelos.exception;
 
 public class BusinessException extends Exception {
 	private static final long serialVersionUID = 6193644331843268598L;

@@ -5,7 +5,7 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.PersistenceException;
 
 import es.uniovi.asw.modelos.exception.*;
-import es.uniovi.asw.persistence.*;
+import es.uniovi.asw.persistence.util.Jpa;
 
 public class CommandExecutor {
 	
