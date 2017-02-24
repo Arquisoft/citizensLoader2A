@@ -1,111 +1,69 @@
-/*C44*/SET SCHEMA PUBLIC
+/*C26*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C45*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C46*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C47*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C48*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C49*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C50*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C51*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C52*/SET SCHEMA PUBLIC
-DELETE FROM TCITIZENS WHERE ID=83
-DELETE FROM TCITIZENS WHERE ID=84
-DELETE FROM TCITIZENS WHERE ID=85
-DELETE FROM TCITIZENS WHERE ID=86
-DELETE FROM TCITIZENS WHERE ID=87
-DELETE FROM TCITIZENS WHERE ID=88
-DELETE FROM TCITIZENS WHERE ID=89
-DELETE FROM TCITIZENS WHERE ID=90
-DELETE FROM TCITIZENS WHERE ID=91
+/*C27*/SET SCHEMA PUBLIC
+INSERT INTO TCITIZENS VALUES(110,'Juan','Torres Pardo','juan@example.com','1985-10-10','C/ Federico Garc\u00eda Lorca 2','Espa\u00f1ol','90500084Y','juan@example.com','Juan123')
 COMMIT
-/*C53*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C54*/SET SCHEMA PUBLIC
-INSERT INTO TCITIZENS VALUES(92,'Juan','Torres Pardo','juan@example.com','1985-10-10','C/ Federico Garc\u00eda Lorca 2','Espa\u00f1ol','90500084Y','juan@example.com','Juan123')
+INSERT INTO TCITIZENS VALUES(111,'Luis','L\u00f3pez Fernando','luis@example.com','1970-03-02','C/ Real Oviedo 2','Espa\u00f1ol','19160962F','luis@example.com','Luis123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(93,'Luis','L\u00f3pez Fernando','luis@example.com','1970-03-02','C/ Real Oviedo 2','Espa\u00f1ol','19160962F','luis@example.com','Luis123')
+INSERT INTO TCITIZENS VALUES(112,'Ana','Torres Pardo','ana@example.com','1960-01-01','Av. De la Constituci\u00f3n 8','Espa\u00f1ol','09940449X','ana@example.com','Ana123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(94,'Ana','Torres Pardo','ana@example.com','1960-01-01','Av. De la Constituci\u00f3n 8','Espa\u00f1ol','09940449X','ana@example.com','Ana123')
+INSERT INTO TCITIZENS VALUES(113,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500094Y','pablo@example.com','Pablo123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(95,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500094Y','pablo@example.com','Pablo123')
+INSERT INTO TCITIZENS VALUES(114,'Jorge','Mateo Blanco','jorge@example.com','1970-03-02','Calle Real Oviedo 1','Italiana','95160962G','jorge@example.com','Jorge123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(96,'Jorge','Mateo Blanco','jorge@example.com','1970-03-02','Calle Real Oviedo 1','Italiana','95160962G','jorge@example.com','Jorge123')
+INSERT INTO TCITIZENS VALUES(115,'Violeta','Blanco Acosta','violeta@example.com','1987-11-16','Calle Principal 3','Italiana','90432976L','violeta@example.com','Violeta123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(97,'Violeta','Blanco Acosta','violeta@example.com','1987-11-16','Calle Principal 3','Italiana','90432976L','violeta@example.com','Violeta123')
+INSERT INTO TCITIZENS VALUES(116,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(98,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
+INSERT INTO TCITIZENS VALUES(117,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(99,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
-COMMIT
-INSERT INTO TCITIZENS VALUES(100,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
+INSERT INTO TCITIZENS VALUES(118,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
 COMMIT
 DISCONNECT
-/*C55*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C56*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C57*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C58*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C59*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C60*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C61*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C62*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C63*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C64*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C52*/DELETE FROM TCITIZENS WHERE ID=92
-DELETE FROM TCITIZENS WHERE ID=93
-DELETE FROM TCITIZENS WHERE ID=94
-DELETE FROM TCITIZENS WHERE ID=95
-DELETE FROM TCITIZENS WHERE ID=96
-DELETE FROM TCITIZENS WHERE ID=97
-DELETE FROM TCITIZENS WHERE ID=98
-DELETE FROM TCITIZENS WHERE ID=99
-DELETE FROM TCITIZENS WHERE ID=100
+/*C25*/SET SCHEMA PUBLIC
+DELETE FROM TCITIZENS WHERE ID=110
+DELETE FROM TCITIZENS WHERE ID=111
+DELETE FROM TCITIZENS WHERE ID=112
+DELETE FROM TCITIZENS WHERE ID=113
+DELETE FROM TCITIZENS WHERE ID=114
+DELETE FROM TCITIZENS WHERE ID=115
+DELETE FROM TCITIZENS WHERE ID=116
+DELETE FROM TCITIZENS WHERE ID=117
+DELETE FROM TCITIZENS WHERE ID=118
 COMMIT
-/*C65*/SET SCHEMA PUBLIC
+/*C28*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C66*/SET SCHEMA PUBLIC
-INSERT INTO TCITIZENS VALUES(101,'Juan','Torres Pardo','juan@example.com','1985-10-10','C/ Federico Garc\u00eda Lorca 2','Espa\u00f1ol','90500084Y','juan@example.com','Juan123')
+/*C29*/SET SCHEMA PUBLIC
+INSERT INTO TCITIZENS VALUES(119,'Juan','Torres Pardo','juan@example.com','1985-10-10','C/ Federico Garc\u00eda Lorca 2','Espa\u00f1ol','90500084Y','juan@example.com','Juan123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(102,'Luis','L\u00f3pez Fernando','luis@example.com','1970-03-02','C/ Real Oviedo 2','Espa\u00f1ol','19160962F','luis@example.com','Luis123')
+INSERT INTO TCITIZENS VALUES(120,'Luis','L\u00f3pez Fernando','luis@example.com','1970-03-02','C/ Real Oviedo 2','Espa\u00f1ol','19160962F','luis@example.com','Luis123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(103,'Ana','Torres Pardo','ana@example.com','1960-01-01','Av. De la Constituci\u00f3n 8','Espa\u00f1ol','09940449X','ana@example.com','Ana123')
+INSERT INTO TCITIZENS VALUES(121,'Ana','Torres Pardo','ana@example.com','1960-01-01','Av. De la Constituci\u00f3n 8','Espa\u00f1ol','09940449X','ana@example.com','Ana123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(104,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500094Y','pablo@example.com','Pablo123')
+INSERT INTO TCITIZENS VALUES(122,'Pablo','Alonso Gil','pablo@example.com','1985-10-10','Calle Mayor 2','Noruega','90500094Y','pablo@example.com','Pablo123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(105,'Jorge','Mateo Blanco','jorge@example.com','1970-03-02','Calle Real Oviedo 1','Italiana','95160962G','jorge@example.com','Jorge123')
+INSERT INTO TCITIZENS VALUES(123,'Jorge','Mateo Blanco','jorge@example.com','1970-03-02','Calle Real Oviedo 1','Italiana','95160962G','jorge@example.com','Jorge123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(106,'Violeta','Blanco Acosta','violeta@example.com','1987-11-16','Calle Principal 3','Italiana','90432976L','violeta@example.com','Violeta123')
+INSERT INTO TCITIZENS VALUES(124,'Violeta','Blanco Acosta','violeta@example.com','1987-11-16','Calle Principal 3','Italiana','90432976L','violeta@example.com','Violeta123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(107,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
+INSERT INTO TCITIZENS VALUES(125,'Mario','Arce Barral','mario@example.com','1990-08-02','Calle Mayor 8','Italiana','17520962F','mario@example.com','Mario123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(108,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
+INSERT INTO TCITIZENS VALUES(126,'Daniel','Lorenzo Gil','daniel@example.com','1988-12-10','Calle Lorca 8','Noruega','90509734R','daniel@example.com','Daniel123')
 COMMIT
-INSERT INTO TCITIZENS VALUES(109,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
+INSERT INTO TCITIZENS VALUES(127,'Eva','Belmonte Blanco','eva@example.com','1960-05-02','Avenida del sur 5','Italiana','59120962S','eva@example.com','Eva123')
 COMMIT
 DISCONNECT
-/*C52*/DELETE FROM TCITIZENS WHERE ID=101
-DELETE FROM TCITIZENS WHERE ID=102
-DELETE FROM TCITIZENS WHERE ID=103
-DELETE FROM TCITIZENS WHERE ID=104
-DELETE FROM TCITIZENS WHERE ID=105
-DELETE FROM TCITIZENS WHERE ID=106
-DELETE FROM TCITIZENS WHERE ID=107
-DELETE FROM TCITIZENS WHERE ID=108
-DELETE FROM TCITIZENS WHERE ID=109
+/*C30*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C31*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C25*/DELETE FROM TCITIZENS WHERE ID=119
+DELETE FROM TCITIZENS WHERE ID=120
+DELETE FROM TCITIZENS WHERE ID=121
+DELETE FROM TCITIZENS WHERE ID=122
+DELETE FROM TCITIZENS WHERE ID=123
+DELETE FROM TCITIZENS WHERE ID=124
+DELETE FROM TCITIZENS WHERE ID=125
+DELETE FROM TCITIZENS WHERE ID=126
+DELETE FROM TCITIZENS WHERE ID=127
 COMMIT
