@@ -26,3 +26,57 @@ Su nombre de usuario es: daniel@example.com
 To eva@example.com:
 Saludos Eva, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
 Su nombre de usuario es: eva@example.com
+To juan@example.com:
+Saludos Juan, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: juan@example.com
+To luis@example.com:
+Saludos Luis, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: luis@example.com
+To ana@example.com:
+Saludos Ana, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: ana@example.com
+To pablo@example.com:
+Saludos Pablo, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: pablo@example.com
+To jorge@example.com:
+Saludos Jorge, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: jorge@example.com
+To violeta@example.com:
+Saludos Violeta, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: violeta@example.com
+To mario@example.com:
+Saludos Mario, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: mario@example.com
+To daniel@example.com:
+Saludos Daniel, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: daniel@example.com
+To eva@example.com:
+Saludos Eva, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: eva@example.com
+To juan@example.com:
+Saludos Juan, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: juan@example.com
+To luis@example.com:
+Saludos Luis, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: luis@example.com
+To ana@example.com:
+Saludos Ana, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: ana@example.com
+To pablo@example.com:
+Saludos Pablo, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: pablo@example.com
+To jorge@example.com:
+Saludos Jorge, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: jorge@example.com
+To violeta@example.com:
+Saludos Violeta, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: violeta@example.com
+To mario@example.com:
+Saludos Mario, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: mario@example.com
+To daniel@example.com:
+Saludos Daniel, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: daniel@example.com
+To eva@example.com:
+Saludos Eva, le informamos de que ha sido registrado correctamente en el sistema de participación ciudadana.
+Su nombre de usuario es: eva@example.com
