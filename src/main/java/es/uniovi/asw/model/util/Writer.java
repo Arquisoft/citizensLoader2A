@@ -1,4 +1,4 @@
-package es.uniovi.asw.reportWriter.util;
+package es.uniovi.asw.model.util;
 
 import java.io.FileWriter;
 import java.io.IOException;

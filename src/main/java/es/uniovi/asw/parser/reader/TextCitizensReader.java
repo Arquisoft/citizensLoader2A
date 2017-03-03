@@ -1,4 +1,4 @@
-package es.uniovi.asw.parser;
+package es.uniovi.asw.parser.reader;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

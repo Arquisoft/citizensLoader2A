@@ -5,7 +5,7 @@ import es.uniovi.asw.model.exception.*;
 
 public interface CitizenService {
 
-	void newCitizen(Citizen citizen) throws BusinessException;
+	void insertCitizen(Citizen citizen) throws BusinessException;
 
 	boolean isCitizenInDatabase(Citizen citizen) throws BusinessException;
 	

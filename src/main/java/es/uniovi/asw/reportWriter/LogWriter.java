@@ -2,7 +2,7 @@ package es.uniovi.asw.reportWriter;
 
 import java.io.IOException;
 
-import es.uniovi.asw.reportWriter.util.Writer;
+import es.uniovi.asw.model.util.Writer;
 
 public class LogWriter {
 	

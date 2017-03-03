@@ -1,8 +1,8 @@
-package es.uniovi.asw.reportWriter;
+package es.uniovi.asw.parser.emailWriter;
 
 import java.io.IOException;
 
-import es.uniovi.asw.reportWriter.util.Writer;
+import es.uniovi.asw.model.util.Writer;
 
 public class TxtEmailWriter implements EmailWriter {
 	

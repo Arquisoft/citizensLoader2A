@@ -1,4 +1,4 @@
-package es.uniovi.asw;
+package es.uniovi.asw.parser;
 
 import java.io.IOException;
 import java.util.List;
@@ -7,51 +7,49 @@ import es.uniovi.asw.business.CitizenService;
 import es.uniovi.asw.conf.ServicesFactory;
 import es.uniovi.asw.model.Citizen;
 import es.uniovi.asw.model.exception.BusinessException;
-import es.uniovi.asw.parser.CitizensReader;
-import es.uniovi.asw.parser.ExcelCitizensReader;
-import es.uniovi.asw.parser.TextCitizensReader;
-import es.uniovi.asw.reportWriter.EmailWriter;
+import es.uniovi.asw.parser.emailWriter.EmailWriter;
+import es.uniovi.asw.parser.emailWriter.TxtEmailWriter;
+import es.uniovi.asw.parser.reader.CitizensReader;
+import es.uniovi.asw.parser.reader.ExcelCitizensReader;
+import es.uniovi.asw.parser.reader.TextCitizensReader;
 import es.uniovi.asw.reportWriter.LogWriter;
-import es.uniovi.asw.reportWriter.TxtEmailWriter;
 
-public class CitizensLoader {
+public class Loader {
 
-	private List<Citizen> citizens;
+	private String formato;
+	private String filePath;
 
-	public static void main(String... args) {
-		try {
-			new CitizensLoader().load((String) args[0], (String) args[1]);
-			// Por si hay problemas con la de arriba
-			// new
-			// CitizensLoader().load("excel","src/test/resources/test.xlsx");
-			// new CitizensLoader().load("texto","src/test/resources/test.txt");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+	public Loader(String formato, String filePath) {
+		this.formato = formato;
+		this.filePath = filePath;
 	}
 
-	public void load(String formato, String filePath) throws IOException,
-			BusinessException {
+	public void readList() throws IOException, BusinessException {
+		
+		List<Citizen> citizens = readCitizens(formato, filePath);
 
 		CitizenService citizenService = ServicesFactory.getCitizenService();
 
-		citizens = getReader(formato).readCitizens(filePath);
-		printCitizens(citizens, filePath);
+		//printCitizens(citizens, filePath);
 
 		for (Citizen citizen : citizens) {
 			if (!citizenService.isCitizenInDatabase(citizen)) {
 				sendEmail(citizen, new TxtEmailWriter());
-				citizenService.newCitizen(citizen);
+				citizenService.insertCitizen(citizen);
 			} else {
-				String mensaje = "El usuario "
-						+ citizen.getNombreUsuario()
+				String mensaje = "El usuario " + citizen.getNombreUsuario()
 						+ " ya está registrado.";
 				LogWriter.write(mensaje);
 			}
 		}
 	}
 
-	private void sendEmail(Citizen citizen, EmailWriter... writers) throws IOException {
+	public List<Citizen> readCitizens(String formato, String filePath) throws IOException {
+		return getReader(formato).readCitizens(filePath);
+	}
+
+	private void sendEmail(Citizen citizen, EmailWriter... writers)
+			throws IOException {
 		String email = "To "
 				+ citizen.getEmail()
 				+ ":\nSaludos "
@@ -62,10 +60,6 @@ public class CitizensLoader {
 			writer.write(email);
 		}
 
-	}
-
-	protected List<Citizen> getCitizens() {
-		return citizens;
 	}
 
 	/**
@@ -80,6 +74,16 @@ public class CitizensLoader {
 		return null;
 	}
 
+	public String getFormato() {
+		return formato;
+	}
+
+	public String getFilePath() {
+		return filePath;
+	}
+	
+	
+	/*
 	private void printCitizens(List<Citizen> citizens, String filePath) {
 		System.out.println("Estos son los usuarios presentes en el fichero "
 				+ filePath + ":");
@@ -87,5 +91,6 @@ public class CitizensLoader {
 			System.out.println(citizen);
 		}
 	}
+	*/
 
 }

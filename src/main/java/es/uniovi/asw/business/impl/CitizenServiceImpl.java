@@ -11,7 +11,7 @@ public class CitizenServiceImpl implements CitizenService {
 	private CommandExecutor executor = new CommandExecutor();
 	
 	@Override
-	public void newCitizen(Citizen citizen) throws BusinessException {
+	public void insertCitizen(Citizen citizen) throws BusinessException {
 		executor.execute(new AddCitizen( citizen ));
 	}
 	

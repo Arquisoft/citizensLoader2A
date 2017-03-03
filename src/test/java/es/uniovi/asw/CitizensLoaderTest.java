@@ -11,14 +11,15 @@ import org.junit.Test;
 
 import es.uniovi.asw.model.Citizen;
 import es.uniovi.asw.model.exception.BusinessException;
+import es.uniovi.asw.parser.Loader;
 
 public class CitizensLoaderTest {
 
     @Test
-    public void testCitizensLoaderFromTxt() throws IOException, BusinessException {
-    	CitizensLoader citizensLoader = new CitizensLoader();
-		citizensLoader.load("texto", "src/test/resources/test.txt");
-		List<Citizen> citizens = citizensLoader.getCitizens();
+    public void testLoadFromTxt() throws IOException, BusinessException {
+    	
+    	Loader loader = new Loader("texto", "src/test/resources/test.txt");
+		List<Citizen> citizens = loader.readCitizens(loader.getFormato(), loader.getFilePath());
 		assertEquals(7, citizens.size());
 		
 		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
@@ -50,10 +51,9 @@ public class CitizensLoaderTest {
     
     
     @Test
-    public void testCitizensLoaderFromExcel() throws IOException, BusinessException {
-    	CitizensLoader citizensLoader = new CitizensLoader();
-		citizensLoader.load("excel", "src/test/resources/test.xlsx");
-		List<Citizen> citizens = citizensLoader.getCitizens();
+    public void testLoadFromExcel() throws IOException, BusinessException {
+		Loader loader = new Loader("excel", "src/test/resources/test.xlsx");
+		List<Citizen> citizens = loader.readCitizens(loader.getFormato(), loader.getFilePath());
 		assertEquals(3, citizens.size());
 		
 		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");

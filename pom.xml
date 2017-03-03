@@ -173,7 +173,7 @@
 					<!-- MainClass in manifest make a executable jar -->
 					<archive>
 						<manifest>
-							<mainClass>es.uniovi.asw.CitizensLoader</mainClass>
+							<mainClass>es.uniovi.asw.Application</mainClass>
 						</manifest>
 					</archive>
 
