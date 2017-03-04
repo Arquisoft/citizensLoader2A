@@ -11,6 +11,8 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+BBDDProduccion/
+BBDDTesting/
 
 # Eclipse Core
 .project
