@@ -11,11 +11,6 @@ local.properties
 .settings/
 .loadpath
 .recommenders
-BBDDProduccion/
-BBDDTesting/
-eclipselink.log
-src/test/resources/emails.txt
-src/test/resources/log.txt
 
 # Eclipse Core
 .project
