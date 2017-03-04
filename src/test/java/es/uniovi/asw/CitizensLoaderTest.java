@@ -84,15 +84,19 @@ public class CitizensLoaderTest {
 		assertEquals(ana.getNombreUsuario(), "ana@example.com");
 		assertEquals(ana.getContrasena(), "Ana123");
     }
-    
+    /*
     @Test
     public void testBBDD() throws IOException, BusinessException { 
-    	Loader loader = new Loader("excel", "src/test/resources/test.xlsx");
+    	
     	CitizenService citizenService = ServicesFactory.getCitizenService();
+    	List<Citizen> citizens = citizenService.findAllCitizens();
+    	citizenService.deleteAllCitizens(citizens);
+    	
+    	Loader loader = new Loader("excel", "src/test/resources/test.xlsx");
     	
     	//Load and send emails to all of the new Citizens
 		loader.readList();
-		List<Citizen> citizens = citizenService.findAllCitizens();
+		citizens = citizenService.findAllCitizens();
 		assertEquals(citizens.size(), 3);
 		
 		//We load all of them again, but all of them are already in the database, so we write the log file
@@ -100,8 +104,7 @@ public class CitizensLoaderTest {
 		citizens = citizenService.findAllCitizens();
 		assertEquals(citizens.size(), 3);
 		
-		//citizenService.deleteAllCitizens(citizens);	
+		citizenService.deleteAllCitizens(citizens);	
     }
-    
-   
+    */ 
 }

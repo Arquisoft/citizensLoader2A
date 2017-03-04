@@ -30,7 +30,7 @@ public class Loader {
 
 		CitizenService citizenService = ServicesFactory.getCitizenService();
 
-		//printCitizens(citizens, filePath);
+		printCitizens(citizens, filePath);
 
 		for (Citizen citizen : citizens) {
 			if (!citizenService.isCitizenInDatabase(citizen)) {
@@ -83,7 +83,7 @@ public class Loader {
 	}
 	
 	
-	/*
+	
 	private void printCitizens(List<Citizen> citizens, String filePath) {
 		System.out.println("Estos son los usuarios presentes en el fichero "
 				+ filePath + ":");
@@ -91,6 +91,6 @@ public class Loader {
 			System.out.println(citizen);
 		}
 	}
-	*/
+	
 
 }
