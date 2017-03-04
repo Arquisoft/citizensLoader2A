@@ -9,9 +9,13 @@ import java.util.List;
 
 import org.junit.Test;
 
+import es.uniovi.asw.business.CitizenService;
+import es.uniovi.asw.conf.ServicesFactory;
 import es.uniovi.asw.model.Citizen;
 import es.uniovi.asw.model.exception.BusinessException;
 import es.uniovi.asw.parser.Loader;
+import es.uniovi.asw.parser.emailWriter.TxtEmailWriter;
+import es.uniovi.asw.reportWriter.LogWriter;
 
 public class CitizensLoaderTest {
 
@@ -82,5 +86,15 @@ public class CitizensLoaderTest {
 		assertEquals(ana.getNombreUsuario(), "ana@example.com");
 		assertEquals(ana.getContrasena(), "Ana123");
     }
-
+    /*
+    @Test
+    public void testBBDD() throws IOException, BusinessException { 
+    	Loader loader = new Loader("excel", "src/test/resources/test.xlsx");
+		loader.readList();
+		
+		
+		
+    }
+    */
+   
 }
