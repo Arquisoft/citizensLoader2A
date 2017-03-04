@@ -71,6 +71,10 @@ public class Citizen {
 		this.nacionalidad = nacionalidad;
 		this.dni = dni;
 	}
+	
+	public Long getID() {
+		return ID;
+	}
 
 	public String getNombreUsuario() {
 		return nombreUsuario;

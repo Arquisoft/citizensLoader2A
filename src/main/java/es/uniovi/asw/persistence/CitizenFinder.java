@@ -19,4 +19,10 @@ public class CitizenFinder {
 			return new Boolean(false);
 		}
 	}
+
+	public static List<Citizen> findAll() {
+		return Jpa.getManager()
+				.createQuery("select c from Citizen c", Citizen.class)
+				.getResultList();
+	}
 }
