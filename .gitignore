@@ -11,9 +11,8 @@ local.properties
 .settings/
 .loadpath
 .recommenders
-
-/BBDDProduccion/
-/BBDDTesting/
+BBDDProduccion/
+BBDDTesting/
 eclipselink.log
 src/test/resources/emails.txt
 src/test/resources/log.txt
